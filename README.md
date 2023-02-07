@@ -1,3 +1,26 @@
+# Curso ReactJS + TypeScript + Material UI
+
+Curso para practicar:
+
+- ReactJS
+
+- TypeScript
+
+- Material UI
+
+---
+
+## Conceptos a aprender
+
+ReactJS V18 
+
+React Router DOM V6 
+
+Material UI Context Api
+
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
