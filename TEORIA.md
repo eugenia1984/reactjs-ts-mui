@@ -225,28 +225,30 @@ Crearemos una página de **login** donde:
 - Componentes vistos:
 
 ```
-NavBar
-Button
-Typography
+<NavBar />
+<Button />
+<Typography />
 ```
 
 - Para el layout:
 
 ```
-Box
-Container
-Grid
-Stack
+<Box />
+<Container />
+<Grid />
+<Stack />
 ```
 
 ```
-Paper
+<Paper />
 ```
 
 - Para forms:
 
 ```
-TextField
+<Box component="form"></Box>
+<TextField />
+<Button type="submit" />
 ```
 
 ---
