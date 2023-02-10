@@ -220,7 +220,7 @@ Crearemos una página de **login** donde:
 
 ---
 
-## Material UI
+## :stars: Material UI
 
 - Componentes vistos:
 
