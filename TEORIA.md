@@ -2,7 +2,7 @@
 
 ---
 
-VIDEO 1
+:tv: VIDEO 1
 
 ---
 
@@ -34,7 +34,8 @@ VIDEO 1
     > context
     > helpers
     > pages
-    > types   
+    > types  
+Router.tsx     
 ```
 
 - **pages** para renderizar componentes acorde a la página a mostrar, acorde al sistema de rutas.
@@ -55,7 +56,7 @@ VIDEO 1
 
 ---
 
-VIDEO 2
+:tv: VIDEO 2
 
 ---
 
@@ -135,7 +136,7 @@ export const ThemeConfig: React.FC<ThemeProp> = ({children}) => {
 
 ---
 
-VIDEO 3
+:tv: VIDEO 3
 
 ---
 
@@ -154,6 +155,68 @@ Crear:
 - Importar el manejo de rutas de nuestro componente App.
 
 - Crear uun componnete **RouterLayout.sx** que nos permita manejar rutas junto a componentes estáticos.
+
+Router.tsx:
+```TypeScript
+export const AppRouter: React.FC<{}> = () => {
+    return (
+        <Routes>
+            <Route path="/" element={<RouterLayout />}>
+                {/* Todas las paginas que se rendericen aca adentro comparten el layout*/}
+                {/* Asi aca comparto el NavBar, Header, Footer, por ejemplo */}
+                <Route path="/" element={<HomePage />} />
+            </Route>   
+            <Route path="/login" element={<LoginPage />} />
+        </Routes>
+    )
+}
+```
+
+App.tsx:
+```TypeScript
+function App() {
+  return (
+    <div>
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
+    </div>
+  );
+}
+```
+
+Router.Layout.tsx:
+```TypeScript
+export const RouterLayout: React.FC<{}> = () => {
+    return(
+        <>
+            <NavBar />
+            <Outlet /> {/* Componente de React Router DOM*/}
+        </>
+    )
+}
+```
+
+---
+
+:tv: VIDEO 4
+
+---
+
+## :star: LOGIN Y TEXT FIELDS
+
+Crearemos una página de **login** donde:
+
+- Acomodamos los componentes con **Container** y **Grid**.
+
+- Creamos campos requeridos en los text fields (es un textarea de una sola línea).
+
+- Creamos un objeto de información con email y contraseña a través de un estado que se ejecute con el submit del formulario. En este caso solo lo vamos a mandar para ver por consola, no lo mandamos a un BackEnd
+
+---
+
+:tv: VIDEO 5
+
 
 ---
 
