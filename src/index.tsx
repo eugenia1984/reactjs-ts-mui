@@ -13,7 +13,6 @@ root.render(
     <ThemeConfig>
       <App />
     </ThemeConfig>
-    
   </React.StrictMode>
 );
 

@@ -1,6 +1,6 @@
+import React from "react";
 import { createTheme, ThemeProvider } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
-import React from "react";
 
 type ThemeProp = {
     children: JSX.Element
