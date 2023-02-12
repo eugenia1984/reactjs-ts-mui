@@ -217,6 +217,29 @@ Crearemos una página de **login** donde:
 
 :tv: VIDEO 5
 
+## Context API y useNotification
+
+- Cutomizar el **Alert**.
+
+- Crear un componente llamado **CustomSnackBar** el cual implementaremos nuestras notificaciones personalizadas.
+
+- Crear nuestro **provider**  probarlo.
+
+---
+
+:tv: VIDEO 6
+
+## Yo
+p
+- Para instalarlo:
+```
+npm install yup
+```
+
+---
+
+:tv: VIDEO 7
+
 
 ---
 
@@ -228,6 +251,12 @@ Crearemos una página de **login** donde:
 <NavBar />
 <Button />
 <Typography />
+```
+
+- Par alos mensajes de alerta:
+```
+<Snackbar />
+<Alert />
 ```
 
 - Para el layout:

@@ -8,6 +8,8 @@ Curso para practicar:
 
 - Material UI
 
+- Yup
+
 ---
 
 ## Conceptos a aprender
