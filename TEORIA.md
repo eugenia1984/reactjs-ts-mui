@@ -27,14 +27,21 @@
 
 ```
 > src
+    > api
     > assets
     > common
-    > conponents
+    > components
+        > Card
+        > Header
+        > Notification
     > config
     > context
-    > helpers
     > pages
-    > types  
+        > home
+            > interface
+        > login
+    > types 
+    > utils 
 Router.tsx     
 ```
 
@@ -46,7 +53,7 @@ Router.tsx
 
 - **context** con las notificacines y demás cosas para manejar de manera global.
 
-- **helpers** funcionalidades lógicas, también se llaman **utils**
+- **utils** funcionalidades lógicas, también se llaman **utils**
 
 - **types** para declarar los tipos
 
@@ -240,6 +247,36 @@ npm install yup
 
 :tv: VIDEO 7
 
+## Header Component
+
+- Crear un componente **HeaderComponent**.
+
+- Que reciba tres parámetros, dos obligatorios y uno opcional.
+
+- El opcional debe ser un componente.
+
+---
+
+:tv: VIDEO 8
+
+## Rick and Morty API
+
+- Crear instancia de **axios**.
+
+```
+npm install axios
+```
+
+- Obtener los datos por consola.
+
+- Diagramar los datos.
+
+
+---
+
+:tv: VIDEO 9
+
+- Crear el componente Card
 
 ---
 
@@ -253,7 +290,7 @@ npm install yup
 <Typography />
 ```
 
-- Par alos mensajes de alerta:
+- Para los mensajes de alerta:
 ```
 <Snackbar />
 <Alert />
@@ -279,5 +316,14 @@ npm install yup
 <TextField />
 <Button type="submit" />
 ```
+
+- Para las cards:
+```
+<Card />
+<CardMedia />
+<CardContent />
+<CardActions />
+```
+
 
 ---

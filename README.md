@@ -10,6 +10,8 @@ Curso para practicar:
 
 - Yup
 
+- Axios
+
 ---
 
 ## Conceptos a aprender

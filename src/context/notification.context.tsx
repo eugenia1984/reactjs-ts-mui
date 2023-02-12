@@ -22,7 +22,7 @@ export const NotificationProvider: React.FC<{children: JSX.Element}> = ({
         setOpen(false);
     };
 
-    const getError = (mag: string) => {
+    const getError = (msg: string) => {
         setSeverity("error");
         setOpen(true);
         setMsg(msg);

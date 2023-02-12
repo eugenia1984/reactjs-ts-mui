@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, 
+import { 
+    Box, 
     Button, 
     Container, 
     Grid, 
@@ -33,8 +34,8 @@ export const LoginPage: React.FC<{}> = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
         e.preventDefault();
-        LoginValidate.validate(loginData).
-            then(() => {
+        LoginValidate.validate(loginData)
+            .then(() => {
                 getSuccess(JSON.stringify(loginData));
             })
             .catch((error)=> {
