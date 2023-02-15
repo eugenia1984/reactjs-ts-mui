@@ -8,18 +8,17 @@
 
 ## :star: INSTALACIONES NECESARIAS:
 
+1. Inicializamos el proyecto con **create-react-app** con **TS**:
 
-1) Inicializamos el proyecto con **create-react-app** con **TS**:
+`npx create-react-app marketplace --template typescript`
 
-```npx create-react-app marketplace --template typescript```
+2. Instalamos **reeact-router-dom** con la versión 6:
 
-2) Instalamos **reeact-router-dom** con la versión 6:
+`npm install react-router-dom@6`
 
-```npm install react-router-dom@6```
+3. Instalamos **Material UI**, el framework de estilos:
 
-3) Instalamos **Material UI**, el framework de estilos:
-
-```npm install @mui/material @emotion/react @emotion/styled @mui/icons-material```
+`npm install @mui/material @emotion/react @emotion/styled @mui/icons-material`
 
 ---
 
@@ -40,9 +39,9 @@
         > home
             > interface
         > login
-    > types 
-    > utils 
-Router.tsx     
+    > types
+    > utils
+Router.tsx
 ```
 
 - **pages** para renderizar componentes acorde a la página a mostrar, acorde al sistema de rutas.
@@ -67,7 +66,7 @@ Router.tsx
 
 ---
 
-## :star: THEME PROVIDER 
+## :star: THEME PROVIDER
 
 ### Customización de estilos
 
@@ -139,7 +138,8 @@ export const ThemeConfig: React.FC<ThemeProp> = ({children}) => {
     );
 }
 ```
-- Y en **index.txs** agrego ```<ThemeConfig>``` así ya se aplica a toda la app.
+
+- Y en **index.txs** agrego `<ThemeConfig>` así ya se aplica a toda la app.
 
 ---
 
@@ -164,6 +164,7 @@ Crear:
 - Crear uun componnete **RouterLayout.sx** que nos permita manejar rutas junto a componentes estáticos.
 
 Router.tsx:
+
 ```TypeScript
 export const AppRouter: React.FC<{}> = () => {
     return (
@@ -172,7 +173,7 @@ export const AppRouter: React.FC<{}> = () => {
                 {/* Todas las paginas que se rendericen aca adentro comparten el layout*/}
                 {/* Asi aca comparto el NavBar, Header, Footer, por ejemplo */}
                 <Route path="/" element={<HomePage />} />
-            </Route>   
+            </Route>
             <Route path="/login" element={<LoginPage />} />
         </Routes>
     )
@@ -180,6 +181,7 @@ export const AppRouter: React.FC<{}> = () => {
 ```
 
 App.tsx:
+
 ```TypeScript
 function App() {
   return (
@@ -193,6 +195,7 @@ function App() {
 ```
 
 Router.Layout.tsx:
+
 ```TypeScript
 export const RouterLayout: React.FC<{}> = () => {
     return(
@@ -230,15 +233,18 @@ Crearemos una página de **login** donde:
 
 - Crear un componente llamado **CustomSnackBar** el cual implementaremos nuestras notificaciones personalizadas.
 
-- Crear nuestro **provider**  probarlo.
+- Crear nuestro **provider** probarlo.
 
 ---
 
 :tv: VIDEO 6
 
 ## Yo
+
 p
+
 - Para instalarlo:
+
 ```
 npm install yup
 ```
@@ -271,12 +277,21 @@ npm install axios
 
 - Diagramar los datos.
 
-
 ---
 
 :tv: VIDEO 9
 
 - Crear el componente Card
+
+---
+
+:tv: VIDEO 10
+
+- Agrego la **paginación** en la parte de las cards de los personajes, ya que la API nos da 20 personajes por página.
+
+---
+
+:tv: VIDEO 11
 
 ---
 
@@ -291,6 +306,7 @@ npm install axios
 ```
 
 - Para los mensajes de alerta:
+
 ```
 <Snackbar />
 <Alert />
@@ -318,6 +334,7 @@ npm install axios
 ```
 
 - Para las cards:
+
 ```
 <Card />
 <CardMedia />
@@ -325,5 +342,16 @@ npm install axios
 <CardActions />
 ```
 
+- Para la paginación:
+
+```
+<Pagination />
+```
+
+- Para el loading:
+
+```
+<CircularProgress />
+```
 
 ---

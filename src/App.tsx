@@ -1,6 +1,5 @@
 import React from 'react';
-import {BrowserRouter} from "react-router-dom";
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
 import { NotificationProvider } from './context/notification.context';
 import { AppRouter } from './Router';
 
