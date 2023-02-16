@@ -16,16 +16,17 @@ Curso para practicar:
 
 ## Conceptos a aprender
 
-ReactJS V18 
+- ReactJS (Versión 18)
 
-React Router DOM V6 
+- React Router DOM V6
 
-Material UI 
+- Material UI
 
-Context 
+- Context
 
-Api
+- Api
 
+- Hooks: useState, useEffect, useParams
 
 ---
 

@@ -11,7 +11,7 @@ import { CardComponent, HeaderComponent } from "../../components";
 import { characters } from "../../api/characters";
 import { TypeCharacter } from "./interface/character.interface";
 
-export const HomePage: React.FC<{}> = () => {
+export const HomePage: React.FC = () => {
     const [page, setPage] = React.useState(1);
     const [count, setCount] = React.useState(1);
     const [allCharacters, setAllCharacters] = React.useState<TypeCharacter[] | null>(null);

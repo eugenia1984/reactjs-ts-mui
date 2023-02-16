@@ -293,6 +293,22 @@ npm install axios
 
 :tv: VIDEO 11
 
+- Página específica del personaje.
+
+Es como la página del detalle del producto en un e-commerce.
+
+- Hook **useParams** de **react-router-dom**. Al definir una ruta se pasa el parametro con :adelante y al hacer el llamado se lo utiliza.
+
+```JSX
+<Route path="/character/:id" element={ <CharacterPage /> } />
+```
+
+---
+
+:tv: VIDEO 12
+
+- Agrego la navegación
+
 ---
 
 ## :stars: Material UI
