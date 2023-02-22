@@ -425,6 +425,18 @@ npm install @reduxjs/toolkit react-redux
 
 ---
 
+:tv: VIDEO 17
+
+- **Formik** validación eficiente, mejorando la experiencia de usuario para mostrar todos los errores en el login.
+
+-> Instalo formik:
+
+```
+npm install formik --save
+```
+
+---
+
 ## :stars: Material UI
 
 - Componentes vistos:

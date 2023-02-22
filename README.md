@@ -8,9 +8,13 @@ Curso para practicar:
 
 - Material UI
 
-- Yup
+- Yup y Formik
 
 - Axios
+
+- Redux y Toolkit
+
+- Lazy Load y Suspense
 
 ---
 
