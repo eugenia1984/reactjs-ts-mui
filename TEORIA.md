@@ -321,6 +321,11 @@ Luego aparecio **context** a través de la implementación de **providers**, per
 
 En cambio ahora con **redux** y **redux toolkit** podemos tener un único **store**(una única fuente de verdad)
 
+![image](https://user-images.githubusercontent.com/72580574/220625500-14072f75-40a6-494a-a649-eda1c091859a.png)
+
+
+---
+
 ## :stars: Material UI
 
 - Componentes vistos:
