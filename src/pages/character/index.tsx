@@ -1,7 +1,8 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   Box,
+  Button,
   Chip,
   CircularProgress,
   Container,
@@ -14,9 +15,9 @@ import { ICharacter } from "./interfaces/character.interface";
 
 export const CharacterPage: React.FC = () => {
   const { id } = useParams();
-
   const [loading, setLoading] = React.useState<boolean>(true);
   const [character, setCharacter] = React.useState<ICharacter | null>(null);
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     characters
@@ -44,6 +45,16 @@ export const CharacterPage: React.FC = () => {
                 <Typography variant="h6">{ character!.origin.name }</Typography>
                 <Box sx={ { mt: 2 } }>
                   <Chip color="primary" variant="outlined" label={ character!.status } />
+                </Box>
+                <Box
+                  sx={ { mt: 2, size: "large" } }
+                  style={ { display: "flex", flexDirection: "row", flexWrap: "wrap", alignContent: "center", justifyContent: "center", alignItems: "center" } }>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={ () => navigate(`/`) }>
+                    Back
+                  </Button>
                 </Box>
               </Grid>
               <Grid item xs={ 6 }>

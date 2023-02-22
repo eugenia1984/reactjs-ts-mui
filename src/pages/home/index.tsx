@@ -38,9 +38,9 @@ export const HomePage: React.FC = () => {
     return (
         <Container maxWidth="xl">
             <HeaderComponent
-                title="Bienvenidos"
-                description="a MarketPlace!"
-                element={ <Button fullWidth variant="contained">Prueba de botón</Button> }
+                title="Welcome"
+                description="to MarketPlace!"
+                element={ <Button fullWidth variant="contained">Click me</Button> }
             />
             { loading ? (
                 <Box sx={ { display: "flex", justifyContent: "center", mt: 4 } }>
@@ -59,6 +59,7 @@ export const HomePage: React.FC = () => {
                                             name={ character.name }
                                             species={ character.species }
                                             status={ character.status }
+                                            id={ character.id }
                                         />
                                     </Grid>
                                 )) }

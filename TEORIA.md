@@ -307,9 +307,19 @@ Es como la página del detalle del producto en un e-commerce.
 
 :tv: VIDEO 12
 
-- Agrego la navegación
+- Agrego la navegación con el **hook**: **useNavigate** para navegar a la ruta que necesitamos asi al hacer click en el botón de ver más entro al detalle del personaje.
 
 ---
+
+:tv: VIDEO 13
+
+### Redux
+
+Antes un componente padre se comunicaba con su hijo.
+
+Luego aparecio **context** a través de la implementación de **providers**, pero cada provider nuevo debe ser declarado.
+
+En cambio ahora con **redux** y **redux toolkit** podemos tener un único **store**(una única fuente de verdad)
 
 ## :stars: Material UI
 
