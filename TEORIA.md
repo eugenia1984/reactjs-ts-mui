@@ -419,6 +419,10 @@ npm install @reduxjs/toolkit react-redux
 
 :tv: VIDEO 16
 
+- Utilizando **localStorage**
+
+- Separar responsabilidades dentro de la app, por medio de métodos, funciones, componentes, etc.
+
 ---
 
 ## :stars: Material UI
