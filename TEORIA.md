@@ -321,8 +321,55 @@ Luego aparecio **context** a través de la implementación de **providers**, per
 
 En cambio ahora con **redux** y **redux toolkit** podemos tener un único **store**(una única fuente de verdad)
 
+Un ejemplo:
+
 ![image](https://user-images.githubusercontent.com/72580574/220625500-14072f75-40a6-494a-a649-eda1c091859a.png)
 
+Hay un **botón** que manda un **evento** con $10.
+
+Ese **evento** entra en el **dispatch** y manda una **acción** con un **payload** a un **reduce**.
+
+EL **store** lo escucha y modifica el estado de ese reduce.
+
+El nuevo estado, modificado en la UI se re renderiza.
+
+ESCUCHA UNA ACCIÓN -> MODIFICA UN ESTADO
+
+Trabajamos con diferentes reducers, pero solo modifica uno.
+
+- ¿Cómo lo implementamos en el código?
+
+Sumando items al carrito.
+
+ItemCard -> Boton para agregar la carrito -> dispatch para el reducer en el store
+
+Selector -> escucha lo que hace el store, el selector del carrito:
+
+-cuenta la cantidad de items en el card
+
+-cambia el boton de activado a desctivado
+
+-ver en un componente de carrito los elementos agregados
+
+- Tareas a realizar:
+
+-Método para agregar al carrito (sin pisar ni resetear la lista del estado)
+
+-Método para remover del carrito (sin pisar ni resetear la lista del estado)
+
+-Método para contar la cantidad de items agregados al carrito.
+
+-Deshabilitar botón de "agregar al carrito" cuando se agregue el elemento.
+
+Pasos:
+
+1. Crear el store
+
+2. Diagramar y armar el slice cart
+
+3. Los hooks para TypeScript
+
+4. Inicializar al store con un provider
 
 ---
 
