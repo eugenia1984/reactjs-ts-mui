@@ -13,7 +13,7 @@ import {
 import { characters } from "../../api/characters";
 import { ICharacter } from "./interfaces/character.interface";
 
-export const CharacterPage: React.FC = () => {
+const CharacterPage: React.FC = () => {
   const { id } = useParams();
   const [loading, setLoading] = React.useState<boolean>(true);
   const [character, setCharacter] = React.useState<ICharacter | null>(null);
@@ -65,4 +65,7 @@ export const CharacterPage: React.FC = () => {
       </Container>
     </Box>
   );
-}  
+};
+
+export default CharacterPage;
+

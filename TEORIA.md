@@ -437,6 +437,12 @@ npm install formik --save
 
 ---
 
+:tv: VIDEO 18
+
+- Implementar **LazyLoad**
+
+---
+
 ## :stars: Material UI
 
 - Componentes vistos:
