@@ -20,7 +20,6 @@ export const cartSlice = createSlice({
   reducers: {
     addToCart: (state, action: PayloadAction<CartAddState>) => {
       const { id } = action.payload;
-
       if (state.length === 0 ||
         state.filter((item) => item.id === id).length === 0
       ) {
@@ -28,7 +27,10 @@ export const cartSlice = createSlice({
       }
     },
     removeToCart: (state, action: PayloadAction<CartRemoveState>) => {
-
+      const { id } = action.payload;
+      if (state.some((item) => item.id === id)) {
+        return state = state.filter((item) => item.id !== id)
+      }
     }
   },
 })

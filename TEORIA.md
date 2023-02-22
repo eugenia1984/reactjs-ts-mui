@@ -405,6 +405,20 @@ npm install @reduxjs/toolkit react-redux
 
 :tv: VIDEO 14
 
+- La funcionalidad para que al hacer click en el botón "Add to Cardt" agreguemos el item al carrito.
+
+---
+
+:tv: VIDEO 15
+
+- Ver los objetos en el carrito
+
+- La funcionalidad para poder eliminar del carrito
+
+---
+
+:tv: VIDEO 16
+
 ---
 
 ## :stars: Material UI
