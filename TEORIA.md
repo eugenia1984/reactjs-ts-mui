@@ -371,6 +371,36 @@ Pasos:
 
 4. Inicializar al store con un provider
 
+### Redux - Toolkit - instalación
+
+[https://redux-toolkit.js.org/](https://redux-toolkit.js.org/)
+
+- Usando create react app:
+
+```
+# Redux + Plain JS template
+npx create-react-app my-app --template redux
+
+# Redux + TypeScript template
+npx create-react-app my-app --template redux-typescript
+```
+
+- En una app ya creada
+
+```
+# npm
+npm install @reduxjs/toolkit
+
+#yarn
+yarn add @reduxjs/toolkit
+```
+
+-React-Toolkit + React Redux:
+
+```
+npm install @reduxjs/toolkit react-redux
+```
+
 ---
 
 ## :stars: Material UI
