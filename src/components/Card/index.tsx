@@ -6,6 +6,7 @@ import {
     CardContent,
     CardMedia,
     Divider,
+    Grid,
     Typography
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -50,7 +51,7 @@ export const CardComponent: React.FC<CardProps> = ({
     return (
         <Card>
             <CardMedia component="img" height="194" image={ image } alt="Aqua Morty" />
-            <CardContent sx={ { minHeight: "320px" } }>
+            <CardContent sx={ { minHeight: "240px" } }>
                 <Typography variant="h5" sx={ { mt: 2, mb: 1.5 } }>{ name }</Typography>
                 <Divider />
                 <Typography sx={ { mt: 1.5 } }>Specie: { species }</Typography>
@@ -58,21 +59,27 @@ export const CardComponent: React.FC<CardProps> = ({
                 <Typography sx={ { mt: 1.5 } }>Status: { status }</Typography>
             </CardContent>
             <CardActions >
-                <Button
-                    fullWidth
-                    variant="contained"
-                    size="small"
-                    onClick={ () => navigate(`/character/${ id }`) }>
-                    Learn more
-                </Button>
-                <Button
-                    fullWidth
-                    variant="outlined"
-                    size="small"
-                    disabled={ disabledBtn }
-                    onClick={ handleAddToCart }>
-                    Add to cart
-                </Button>
+                <Grid container columnSpacing={ 2 }>
+                    <Grid item xs={ 12 } sm={ 6 } style={ { marginBottom: "12px" } }>
+                        <Button
+                            fullWidth
+                            variant="contained"
+                            size="small"
+                            onClick={ () => navigate(`/character/${ id }`) }>
+                            View detail
+                        </Button>
+                    </Grid>
+                    <Grid item xs={ 12 } sm={ 6 }>
+                        <Button
+                            fullWidth
+                            variant="outlined"
+                            size="small"
+                            disabled={ disabledBtn }
+                            onClick={ handleAddToCart }>
+                            Add to cart
+                        </Button>
+                    </Grid>
+                </Grid>
             </CardActions>
         </Card >
     )

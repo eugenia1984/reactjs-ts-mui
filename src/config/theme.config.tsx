@@ -8,8 +8,8 @@ type ThemeProp = {
 
 export enum themePalette {
     BG = "#12181b",
-    LIME = "#C8FA5F",
-    FONT_GLOBAL =  "'JetBrains Mono', monospace",
+    BG_SECONDARY = "#00C8E0",
+    FONT_GLOBAL = "'JetBrains Mono', monospace",
     // Alert Styles
     ERROR_MAIN = "#F44336",
     BG_ERROR_MAIN = "rgba(244, 67, 54, 0.1)",
@@ -19,13 +19,13 @@ export enum themePalette {
 
 
 const theme = createTheme({
-    palette:{
-        mode:"dark",
+    palette: {
+        mode: "dark",
         background: {
             default: themePalette.BG,
         },
         primary: {
-            main: themePalette.LIME,
+            main: themePalette.BG_SECONDARY,
         },
     },
     typography: {
@@ -50,11 +50,11 @@ const theme = createTheme({
             },
             styleOverrides: {
                 standardError: {
-                    border: `1px solid ${themePalette.ERROR_MAIN}`,
+                    border: `1px solid ${ themePalette.ERROR_MAIN }`,
                     background: themePalette.BG_ERROR_MAIN,
                 },
                 standardSuccess: {
-                    border: `1px solid ${themePalette.SUCESS_MAIN}`,
+                    border: `1px solid ${ themePalette.SUCESS_MAIN }`,
                     background: themePalette.BG_ERROR_MAIN,
                 },
             },
@@ -62,11 +62,11 @@ const theme = createTheme({
     },
 });
 
-export const ThemeConfig: React.FC<ThemeProp> = ({children}) => {
+export const ThemeConfig: React.FC<ThemeProp> = ({ children }) => {
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={ theme }>
             <CssBaseline />
-            {children}
+            { children }
         </ThemeProvider>
     );
 }

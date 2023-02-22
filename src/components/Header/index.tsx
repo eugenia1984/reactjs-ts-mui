@@ -33,17 +33,12 @@ export const HeaderComponent: React.FC<HeaderProps> = ({
                             alignItems="center"
                             sx={ { height: "100%" } }
                         >
-                            <Grid item >
+                            <Grid item>
                                 <Typography variant="h4">{ title }</Typography>
                             </Grid>
                             <Grid item sx={ { mt: 2 } }>
                                 <Typography>{ description }</Typography>
                             </Grid >
-                            { element !== undefined && (
-                                <Grid sx={ { mt: 4, width: "100%" } } item >
-                                    { element }
-                                </Grid>
-                            ) }
                         </Grid>
                     </Grid>
                 </Grid>

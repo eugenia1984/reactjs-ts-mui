@@ -11,6 +11,7 @@ import {
 import { useNotification } from '../../context/notification.context';
 import { LoginValidate } from '../../utils/validateForm';
 import { useFormik } from 'formik';
+import { useNavigate } from 'react-router-dom';
 
 type LoginType = {
     username: string;
@@ -18,6 +19,7 @@ type LoginType = {
 };
 
 const LoginPage: React.FC<{}> = () => {
+    const navigate = useNavigate();
     const { getSuccess } = useNotification();
     const formik = useFormik<LoginType>({
         initialValues: {
@@ -32,12 +34,23 @@ const LoginPage: React.FC<{}> = () => {
 
     return (
         <Container maxWidth="sm">
+            <Grid container>
+                <Button
+                    fullWidth
+                    type="submit"
+                    variant="contained"
+                    sx={ { mt: 5, mb: 3 } }
+                    onClick={ () => navigate(`/`) }
+                >
+                    Back to Home
+                </Button>
+            </Grid>
             <Grid
                 container
                 direction="column"
                 alignItems="center"
                 justifyContent="center"
-                sx={ { minHeight: '100vh' } }
+                sx={ { minHeight: '90vh' } }
             >
                 <Grid item>
                     <Paper sx={ { padding: '1.2em', borderRadius: '0.5em' } }>

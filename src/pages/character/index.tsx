@@ -39,17 +39,31 @@ const CharacterPage: React.FC = () => {
             </Box>
           ) : (
             <Grid sx={ { mt: 2 } } container columnSpacing={ 2 }>
-              <Grid item xs={ 6 }>
+              <Grid item xs={ 12 } sm={ 6 }>
+                <img
+                  src={ character!.image }
+                  alt={ character!.name }
+                  style={ { width: "100%", borderRadius: "0.5em" } }
+                />
+              </Grid>
+              <Grid item xs={ 12 } sm={ 6 }>
                 <Typography variant='h3' >{ character!.name }</Typography>
                 <Divider />
-                <Typography variant="h6">{ character!.origin.name }</Typography>
-                <Box sx={ { mt: 2 } }>
-                  <Chip color="primary" variant="outlined" label={ character!.status } />
+                <Typography variant="h6">Specie: { character!.species }</Typography>
+                <Typography variant="h6">Origin: { character!.origin.name }</Typography>
+                <Typography variant="h6">Location: { character!.location.name }</Typography>
+                <Typography variant="h6">Created: { character!.created }</Typography>
+                <Box sx={ { mt: 2, mb: 2 } }>
+                  <Chip
+                    color={ (character!.status === "Alive") ? "success" : "error" }
+                    variant={ (character!.status === "Alive") ? "filled" : "outlined" }
+                    label={ character!.status } />
                 </Box>
                 <Box
-                  sx={ { mt: 2, size: "large" } }
+                  sx={ { mt: 5, mb: 5, size: "large" } }
                   style={ { display: "flex", flexDirection: "row", flexWrap: "wrap", alignContent: "center", justifyContent: "center", alignItems: "center" } }>
                   <Button
+                    fullWidth
                     variant="contained"
                     size="small"
                     onClick={ () => navigate(`/`) }>
@@ -57,9 +71,7 @@ const CharacterPage: React.FC = () => {
                   </Button>
                 </Box>
               </Grid>
-              <Grid item xs={ 6 }>
-                <img src={ character!.image } style={ { width: "100%", borderRadius: "0.5em" } } />
-              </Grid>
+
             </Grid>
           ) }
       </Container>

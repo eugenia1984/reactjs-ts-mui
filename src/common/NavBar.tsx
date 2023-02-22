@@ -36,11 +36,12 @@ export const NavBar: React.FC<{}> = () => {
                             direction="row"
                             justifyContent="space-between"
                             alignItems="center"
+                            style={ { paddingTop: "12px" } }
                         >
-                            <Grid item>
+                            <Grid item sx={ { mt: 2, mb: 2 } }>
                                 <Typography>MarketPlace</Typography>
-                            </Grid>
-                            <Grid item>
+                            </Grid >
+                            <Grid item sx={ { mb: 2 } }>
                                 <Stack direction="row" spacing={ 2 }>
                                     <IconButton
                                         color="primary"
