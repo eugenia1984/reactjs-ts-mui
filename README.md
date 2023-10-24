@@ -34,6 +34,10 @@ Curso para practicar:
 
 ---
 
+
+- Seguime en: [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
+  
+---
 ---
 
 ### Getting Started with Create React App
