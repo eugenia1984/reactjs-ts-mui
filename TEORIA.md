@@ -239,13 +239,12 @@ Crearemos una página de **login** donde:
 
 :tv: VIDEO 6
 
-## Yo
+## Yup
 
-p
 
 - Para instalarlo:
 
-```
+```BASH
 npm install yup
 ```
 
@@ -269,7 +268,7 @@ npm install yup
 
 - Crear instancia de **axios**.
 
-```
+```BASH
 npm install axios
 ```
 
@@ -377,7 +376,7 @@ Pasos:
 
 - Usando create react app:
 
-```
+```BASH
 # Redux + Plain JS template
 npx create-react-app my-app --template redux
 
@@ -387,7 +386,7 @@ npx create-react-app my-app --template redux-typescript
 
 - En una app ya creada
 
-```
+```BASH
 # npm
 npm install @reduxjs/toolkit
 
@@ -397,7 +396,7 @@ yarn add @reduxjs/toolkit
 
 -React-Toolkit + React Redux:
 
-```
+```BASH
 npm install @reduxjs/toolkit react-redux
 ```
 
@@ -431,7 +430,7 @@ npm install @reduxjs/toolkit react-redux
 
 -> Instalo formik:
 
-```
+```BASH
 npm install formik --save
 ```
 
@@ -455,14 +454,14 @@ npm install formik --save
 
 - Para los mensajes de alerta:
 
-```
+```JSX
 <Snackbar />
 <Alert />
 ```
 
 - Para el layout:
 
-```
+```JSX
 <Box />
 <Container />
 <Grid />
@@ -475,7 +474,7 @@ npm install formik --save
 
 - Para forms:
 
-```
+```JSX
 <Box component="form"></Box>
 <TextField />
 <Button type="submit" />
@@ -483,7 +482,7 @@ npm install formik --save
 
 - Para las cards:
 
-```
+```JSX
 <Card />
 <CardMedia />
 <CardContent />
@@ -492,13 +491,13 @@ npm install formik --save
 
 - Para la paginación:
 
-```
+```JSX
 <Pagination />
 ```
 
 - Para el loading:
 
-```
+```JSX
 <CircularProgress />
 ```
 
